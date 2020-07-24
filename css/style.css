@@ -1,0 +1,818 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+header, section, article, aside, nav, footer, address {
+	display: block;
+}
+body {
+	font-family: 'montserratregular', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #555;
+	overflow-x: hidden;
+}
+input,textarea,select{
+	font-family: 'montserratregular', Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a{
+	color: #555;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+}
+.hidden{
+	display:none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+body p{
+	font-family: 'montserratlight';
+}
+.overlay{
+	display: none;
+}
+header h1{
+	float: left;
+	padding: 10px 0;
+	width: 120px;
+	height: 60px;
+}
+header h1 a{
+	display: inline-block;
+}
+header h1 a img{
+	width: 120px;
+	height: 60px;
+	display: inline-block;
+}
+header nav{
+	float: right;
+	width: 50%;
+}
+header ul li{
+	float: left;
+	text-transform: uppercase;
+	line-height: 80px;
+	font-size: 16px;
+	width: 20%;
+	text-align: center;
+}
+#top ul li.active{
+	background: #FF6D00;
+}
+#top ul li.active a{
+	color: #fff;
+}
+#top ul li:last-child{
+	margin-right: 0;
+}
+#spotlight{
+	background: url("../images/spotlight.jpg") no-repeat scroll center top / cover;
+	padding: 15% 0;
+}
+#spotlight div.content{
+	float: right;
+	background: #fff;
+	width: 70%;
+	padding: 30px 60px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#spotlight div.content h2{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+#spotlight div.content h2 b{
+	display: block;
+	font-weight: bold;
+	font-size: 100px;
+}
+#about{
+	padding: 40px 0;
+}
+#about div.left{
+	width: 45%;
+}
+#about div.left img{
+	display: block;
+	width: 100%;
+}
+#about div.right{
+	width: 45%;
+	padding-top: 80px;
+}
+#about div.right h3{
+	text-transform: uppercase;
+	font-size: 50px;
+}
+#about div.right span.line{
+	width: 40%;
+	height: 5px;
+	background: #FF6D00;
+	display: block;
+	margin: 10px 0;
+}
+#about div.right a.button{
+	display: inline-block;
+	padding: 5px 15px;
+	border: 3px solid #FF6D00;
+	margin-top: 10px;
+}
+#services{
+	background: #E0E0E0;
+	padding: 40px 0;
+}
+div.title  h2{
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+div.title span.line{
+	width: 18%;
+	height: 5px;
+	background: #FF6D00;
+	display: block;
+}
+#services ul{
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+#services ul li{
+	float: left;
+	width:50%;
+}
+#services ul li div.left{
+	width: 50%;
+}
+#services ul li div.right{
+	width: 50%;
+}
+#services ul li div h4{
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#services ul li div.bg{
+	background: #fff;
+	padding: 30px 20px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#services ul li div.img img{
+	display: block;
+	width: 100%;
+}
+#services ul li span.line{
+	display: inline-block;
+	width: 40px;
+	height: 4px;
+	background: #FF6D00;
+}
+#projects{
+	padding: 40px 0;
+}
+#projects ul{
+	float: left;
+	width: 100%;
+	margin-top: 40px;
+}
+#projects ul li{
+	float: left;
+	width: 23.5%;
+	margin-right: 2%;
+}
+#projects ul li:last-child{
+	margin-right: 0;
+}
+#projects ul li img{
+	display: block;
+	width: 100%;
+}
+#projects ul li h5{
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-size: 16px;
+}
+#choose{
+	background: #E0E0E0;
+	padding: 40px 0;
+}
+#choose div.left{
+	width: 45%;
+}
+#choose div.left img{
+	width: 100%;
+	display: block;
+}
+#choose div.right{
+	width: 45%;
+	padding-top: 80px;
+}
+#choose div.right h3{
+	text-transform: uppercase;
+	font-size: 50px;
+}
+#choose div.right span.line{
+	width: 200px;
+	height: 5px;
+	background: #FF6D00;
+	display: block;
+	margin: 5px 0;
+}
+footer .top{
+	border-top: 3px solid #FF6D00;
+	border-bottom: 3px solid #FF6D00;
+	padding: 30px 0;
+}
+footer .top div{
+	float: left;
+	width: 21.25%;
+	margin-right: 5%;
+}
+footer div.logo h1{
+	margin-bottom: 10px;
+}
+footer div.logo h1 a{
+	display: inline-block;
+}
+footer div.logo span.social b{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+footer div.logo span.social a.icon{
+	width: 27px;
+	height: 27px;
+	background: url(../images/sprite.png) 0 0;
+	display: inline-block;
+}
+footer div.logo span.social a.icon.twitter{
+	background-position: -29px 0;
+	margin: 0 5px;
+}
+footer div.logo span.social a.icon.gplus{
+	background-position: -59px 0;
+}
+footer .top div.contact{
+	margin-right: 0;
+}
+footer .top div.form p{
+	width: 100%;
+	margin-bottom: 10px;
+}
+footer .top div.form p input{
+	width: 100%;
+	border: none;
+	background: none;
+	background: #fff;
+	border: 1px solid #FF6D00;
+	height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	outline: none;font-size: 12px;
+}
+footer .top div.form p textarea{
+	width: 100%;
+	resize: none;
+	border: none;
+	background: none;
+	background: #fff;
+	border: 1px solid #FF6D00;
+	height: 60px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 0 0 10px;
+	outline: none;font-size: 12px;
+}
+footer .top div.form div.submit input{
+	background: none;
+	background: #FF6D00;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	outline: none;
+}
+footer .top div.menu b{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+footer .top div.menu h4{
+	margin-left: -25px;
+}
+footer .top div.menu h4 small{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background: url(../images/sprite.png) -120px -5px;
+	margin-right: 5px;
+}
+footer .top div.contact h4{
+	margin-left: -30px;
+}
+footer .top div.contact h4 small{
+	width: 26px;
+	height: 20px;
+	display: inline-block;
+	background: url(../images/sprite.png) -91px -5px;
+	margin-right: 5px;
+}
+footer .top div.contact  p b{
+	display: block;
+}
+footer .top div.contact  p span{
+	float: left;
+	margin-bottom: 5px;
+}
+footer .bottom{
+	background: #212121;
+	text-align: center;
+	padding: 10px 0;
+	color: #fff;
+}
+footer .bottom p a{
+	color: #fff;
+}
+#vision{
+	padding: 3% 0;
+	background: #eeeeee;
+}
+#vision div.left{
+	width: 40%;
+}
+#vision div.left img{
+	width: 100%;
+	display: block;
+}
+#vision div.right{
+	width: 55%;
+	padding-top: 50px;
+}
+#vision div h3{
+	text-transform: capitalize;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+#mission{
+	padding: 3% 0;
+}
+#mission div.left{
+	width: 55%;
+	padding-top: 50px;
+}
+#mission div.right{
+	width: 40%;
+}
+#mission div.right img{
+	width: 100%;
+	display: block;
+}
+#mission div h3{
+	text-transform: capitalize;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+#history{
+	padding: 3% 0;
+	background: #eeeeee;
+}
+#history div.left{
+	width: 40%;
+}
+#history div.left img{
+	width: 100%;
+	display: block;
+}
+#history div.right{
+	width: 55%;
+	padding-top: 50px;
+}
+#history div h3{
+	text-transform: capitalize;
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+#servicecategory{
+	background: #E0E0E0;
+}
+#servicecategory .category{
+	padding: 40px 0;
+}
+#servicecategory .category h3{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+#servicecategory ul{
+	float: left;
+	width: 100%;
+}
+#servicecategory ul li{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	text-align: center;
+}
+#servicecategory ul li:nth-child(3n){
+	margin-right: 0;
+}
+#servicecategory ul li div{
+	background: #fff;
+	padding: 30px;
+}
+#servicecategory ul li span.icon{
+	display: inline-block;
+	background: #FF6D00;
+	border-radius: 50%;
+	padding: 15px;
+}
+#servicecategory ul li h6{
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+#servicecategory small.line{
+	width: 10%;
+	height: 5px;
+	background: #FF6D00;
+	display: block;
+	margin-bottom: 30px;
+}
+#form{
+	background: #F2F2F2;
+	padding: 40px 0;
+}
+#form h3{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+#form .container{
+	width: 80%;
+	margin: 0 auto;
+}
+#form form{
+	margin-top: 30px;
+}
+#form form p{
+	width: 48%;
+	margin-bottom: 30px;
+}
+#form p input{
+	width: 100%;
+	border:none;
+	background: none;
+	background: #fff;
+	border:1px solid #FF6D00;
+	height: 60px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 15px;
+	outline: none;
+}
+#form p.message{
+	width: 100%;
+}
+#form p textarea{
+	width: 100%;
+	border:none;
+	background: none;
+	background: #fff;
+	border:1px solid #FF6D00;
+	height: 100px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:15px 0 0 15px;
+	outline: none;
+	resize:none;
+}
+#form form div.submit{
+	text-align: center;
+}
+#form form input.submit{
+	background: none;
+	background: #FF6D00;
+	padding: 10px 30px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	outline: none;
+}
+input::-moz-focus-inner{
+	border:0;
+}
+div.map{
+	height: 300px;
+}
+@media all and (max-width:1200px){
+	#choose div.right h3,#about div.right h3{
+		font-size: 40px;
+	}
+	#choose div.right,#about div.right{
+		padding-top: 40px;
+	}
+	#spotlight div.content h2 b{
+		font-size: 80px;
+	}
+	#top header nav{
+		width: 60%;
+	}
+}
+@media all and (max-width:1000px){
+	#spotlight div.content h2{
+		font-size: 25px;
+	}
+	#spotlight div.content h2 b{
+		font-size: 60px;
+	}
+}
+@media all and (max-width: 900px){
+	#choose div.right h3,#about div.right h3{
+		font-size: 35px;
+	}
+	footer .top div{
+		width: 47.5%;
+		margin-bottom: 25px;
+	}
+	footer .top div.form,footer .top div.contact{
+		margin-right: 0;
+	}
+}
+@media all and (max-width: 900px){
+	#services ul li{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#services ul li div.bg{
+		padding: 70px;
+	}
+	header nav{
+		display: none;
+	}
+	.overlay {
+	    display: block;
+	    height: 0%;
+	    width: 100%;
+	    position: fixed;
+	    z-index: 99999;
+	    top: 0;
+	    left: 0;
+	    background-color: rgb(0,0,0);
+	    background-color: rgba(0,0,0, 0.8);
+	    overflow-y: hidden;
+	    transition: 0.5s;
+	}
+
+	.overlay-content {
+	    position: relative;
+	    top: 25%;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 30px;
+	}
+	.overlay ul li{
+	    display: block;
+	    margin-right: 0;
+	    line-height: 30px;
+	    float: none;
+	    width: 100%;
+	}
+	.overlay a {
+	    padding: 8px;
+	    text-decoration: none;
+	    font-size: 22px;
+	    color: #fff;
+	    display: inline-block;
+	    transition: 0.3s;
+	    text-transform: uppercase;
+	}
+	.openmenu{
+	    display: block;
+	    cursor:pointer;
+	    position: absolute;
+	    top:18px;
+	    right: 35px;
+	    background: url(../images/menu.png);
+	    width: 32px;
+	    z-index: 9999;
+	    height: 32px;
+	}
+	.overlay a:hover, .overlay a:focus {
+	    color: #FF6D00;
+	}
+
+	.overlay .closebtn {
+	    position: absolute;
+	    top: -5px;
+	    right: 27px;
+	    font-size: 60px;
+	}
+}
+@media all and (max-width: 800px){
+	#projects ul li{
+		width: 49%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	#projects ul li:nth-child(2n){
+		margin-right: 0;
+	}
+	#choose div.left,#about div.left{
+		width: 70%;
+		margin-left: 15%;
+	}
+	#choose div.right,#about div.right{
+		width: 70%;
+		margin-right: 15%;
+	}
+	#spotlight div.content{
+		background: rgba(0,0,0,0.1);
+		width: 100%;
+		color: #000;
+		text-align: center;
+		padding: 20px 0;
+	}
+	#vision div.left{
+		width: 70%;
+		margin-left: 15%;
+	}
+	#vision div.right{
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	#mission div.left{
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	#mission div.right{
+		width: 70%;
+		margin-right: 15%;
+	}
+	#history div.left{
+		width: 70%;
+		margin-left: 15%;
+	}
+	#history div.right{
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	div.title h2{
+		font-size: 30px;
+	}
+	#servicecategory ul li{
+		width: 47.5%;
+		margin-bottom: 25px;
+	}
+	#servicecategory ul li:nth-child(3n){
+		margin-right: 5%;
+	}
+	#servicecategory ul li:nth-child(2n){
+		margin-right: 0;
+	}
+}
+@media all and (max-width: 640px){
+	#history div h3,#mission div h3,#vision div h3{
+		font-size: 25px;
+	}
+	#services ul li div.bg{
+		padding: 30px;
+	}
+	#form form p{
+		width: 100%;
+	}
+}
+@media all and (max-width: 480px){
+	#services ul li div.left{
+		width: 100%;
+		height:  auto!important;
+	}
+	#services ul li div.right{
+		width: 100%;
+		height:  auto!important;
+	}
+	#projects ul li{
+		width: 100%;
+		margin-right: 0;
+	}
+	#choose div.left,#about div.left{
+		width: 90%;
+		margin-left: 5%;
+	}
+	#choose div.right,#about div.right{
+		width: 90%;
+		margin-right: 5%;
+	}
+	footer .top {
+		width: 80%;
+		margin: 0 auto;
+	}
+	footer .top div{
+		width: 100%;
+		margin-right: 0;
+	}
+	footer .top div.logo{
+		text-align: center;
+	}
+	#choose div.right h3, #about div.right h3{
+		font-size: 26px;
+	}
+	#spotlight div.content h2 b{
+		font-size: 40px;
+	}
+	#spotlight div.content h2{
+		font-size: 16px;
+	}
+	#servicecategory ul {
+		width: 90%;
+		margin-left: 5%;
+	}
+	#servicecategory ul li{
+		width: 100%;
+	}
+	#servicecategory .category h3{
+		font-size: 30px;
+	}
+	
+}

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Arena kollam</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" /> 
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<meta property="og:image" content="images/og.png" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+	</head>
+	<body class="inner">
+		<section id="top">
+			<header>
+				<section class="wrapper">
+				<h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html" title="Home">Home</a></li>
+						<li><a href="about.html" title="About">About</a></li>
+						<li><a href="services.html" title="Services">Services</a></li>
+						<li><a href="project.html" title="Projects">Project</a></li>
+						<li class="active"><a href="contact.html" title="Contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div id="myNav" class="overlay">
+	                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	                <div class="overlay-content">
+	                    <ul onclick="closeNav()">
+	                        <li><a href="indexx.html" title="Home">Home</a></li>
+	                        <li><a href="about.html" title="About">About</a></li>
+	                        <li><a href="services.html" title="Services">Services</a></li>
+	                        <li><a href="project.html" title="Project">Projects</a></li>
+	                        <li class="last"><a href="contact.html" title="Contact">Contact</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+            	<span class="openmenu hidden" title="Menu" onclick="openNav()">&nbsp;</span>
+				<br class="clear"/>
+			</section>
+			</header>
+			<section id="spotlight">
+				<div class="content">
+					<h2><b>Contact</b></h2>
+				</div>
+				<br class="clear" />
+			</section>
+		</section><!--(#top)-->
+		<section id="form">
+			<section class="wrapper">
+				<section class="container">
+					<h3>Write To Us!</h3>
+					<p>We love to hear from you. Fill the below form with your info and query. We will respond quickly as we receive your query.</p>
+					<form action="">
+						<p class="left">
+							<input type="text" placeholder="Name" name="" />
+						</p>
+						<p class="right">
+							<input type="text" placeholder="Emal" name="" />
+						</p>
+						<p class="left">
+							<input type="text" placeholder="Phone" name="" />
+						</p>
+						<p class="right">
+							<input type="text" placeholder="Subject" name="" />
+						</p>
+						<br class="clear" />
+						<p class="message">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Message" ></textarea>
+						</p>
+						<div class="submit">
+							<input type="submit" class="submit" value="Submit" />
+						</div>
+					</form>
+				</section>
+			</section><!--(#form > .wrapper)-->
+		</section><!--(#form)-->
+		<section id="map">
+			<div class="map" id="map_canvas">&nbsp;</div>
+		</section><!--(#map)-->
+		<footer>
+			<section class="top">
+				<section class="wrapper">
+					<div class="logo">
+						<h1><a href=""><img src="images/logo.png" alt="Image"></a></h1>
+						<span class="social">
+							<b>Follow US On</b>
+							<a href="" class="icon fb">&nbsp;</a>
+							<a href="" class="icon twitter">&nbsp;</a>
+							<a href="" class="icon gplus">&nbsp;</a>
+						</span>
+					</div>
+					<div class="form">
+						<form action="">
+							<p><input type="text" name="" placeholder="Name"></p>
+							<p><input type="text" name="" placeholder="Email"></p>
+							<p><input type="text" name="" placeholder="Subject"></p>
+							<p><textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea></p>
+							<div class="submit">
+								<input type="submit" value="Send" class="submit">
+							</div>
+						</form>
+					</div>
+					<div class="menu">
+						<h4><small>&nbsp;</small>Quick Links</h4>
+						<b><a href="index.html" title="Home">Home</a></b>
+						<b><a href="about.html" title="Aboout">About</a></b>
+						<b><a href="services.html" title="services">services</a></b>
+						<b><a href="project.html" title="projects">projects</a></b>
+						<b><a href="contact.html" title="Contact">Contact</a></b>
+					</div>
+					<div class="contact">
+						<h4><small>&nbsp;</small>Contact Us</h4>
+						<p><span>Phone : </span><a href="tel:+9976868658">04742760434</a> <b><a href="tel:+9976868658"> 7012799546</a></b></p>
+                        <p>Address :3rd floor,SKP Building</p>
+                        <p>Beach Road, Kollam</p>
+					</div>
+					<br class="clear">
+				</section>
+			</section><!--(footer .top)-->
+			<section class="bottom">
+				<section class="wrapper">
+					<p>&copy;2018 Arena Kollam. All right reserved. Developed by <a href="" title="" target="_blank">MONU SURESH</a></p>
+				</section>
+			</section><!--(footer .bottom)-->
+		</footer><!--(footer)-->
+		<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3&key=AIzaSyAzdh7lxduLdiOgSXoJ15X2HMKI4pHpJoA&sensor=false"></script>
+		<script type="text/javascript">			
+			$(document).ready(function(){
+				var map;
+			    function initialize(){
+			        var myLatlng = new google.maps.LatLng(8.660421, 76.983647);
+			        var myOptions = {
+						zoom: 15,
+						center: myLatlng,
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+			        };
+			        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+			        
+			        google.maps.event.addListener(map, 'zoom_changed', function(){
+			            setTimeout(moveToDarwin, 1500);
+			        });
+			        var marker = new google.maps.Marker({
+			            position: myLatlng,
+			            map: map,
+			            title: ""
+			        });
+			        google.maps.event.addListener(marker, 'click', function(){
+			            map.setZoom(18);
+			        });
+			    }
+			    function moveToDarwin(){
+			        var darwin = new google.maps.LatLng(8.660421, 76.983647);
+			        map.setCenter(darwin);
+			    }
+				initialize();
+			});				
+		</script>
+	</body>
+</html>
